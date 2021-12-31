@@ -1,5 +1,4 @@
 import React from 'react'
-
 const Pagination = ({postPerpage, totalPosts, paginate}) => {
     const pageNumber =[];
     for(let i=1; i<= Math.ceil(totalPosts/ postPerpage); i++){

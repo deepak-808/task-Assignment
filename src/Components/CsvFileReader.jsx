@@ -47,17 +47,12 @@ const CsvFileReader = () => {
   const paginate = (page) => {
       setCurrentPage(page)
   };
-  const nextClick = () =>{
-    if(posts.length -1 !== currentPage){
-        setCurrentPage(currentPage+1)
-    }
-}
 
   return (
     <div className="container">
       <Posts posts={currentPosts} loading={loading} />
       <Pagination postPerpage={postsPerPage} totalPosts={posts.length}
-      paginate={paginate} nextClick={nextClick}/>
+      paginate={paginate}/>
     </div>
   );
 };
