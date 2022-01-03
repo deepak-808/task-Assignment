@@ -4,7 +4,7 @@ import CsvFileReader from "./Components/CsvFileReader";
 
 const App = () => {
   return (
-    <Router basename="/task-assignment">
+    <Router>
       <Routes>
         <Route exact path='/' element={<CsvFileReader/>}/>
       </Routes>
